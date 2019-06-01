@@ -1,0 +1,153 @@
+{
+  "version": "0",
+  "id": "b19ca2fa-e898-dcd2-f7b0-a4e6afc87710",
+  "detail-type": "AWS API Call via CloudTrail",
+  "source": "aws.ec2",
+  "account": "xxxxxxxxxxxxxx",
+  "time": "2019-05-20T01:15:53Z",
+  "region": "us-east-1",
+  "resources": [],
+  "detail": {
+    "eventVersion": "1.05",
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDAIOUUCXLOQVAZ2SSJG",
+      "arn": "arn:aws:iam::xxxxxxxxxxxxxx:user/Anil",
+      "accountId": "xxxxxxxxxxxxxx",
+      "accessKeyId": "ASIAxxxxxxxx",
+      "userName": "Anil",
+      "sessionContext": {
+        "attributes": {
+          "mfaAuthenticated": "false",
+          "creationDate": "2019-05-20T22:40:27Z"
+        }
+      },
+      "invokedBy": "signin.amazonaws.com"
+    },
+    "eventTime": "2019-05-21T00:03:50Z",
+    "eventSource": "ec2.amazonaws.com",
+    "eventName": "AuthorizeSecurityGroupIngress",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "108.77.185.161",
+    "userAgent": "signin.amazonaws.com",
+    "requestParameters": {
+      "groupId": "sg-03086xxxxxxxxx",
+      "ipPermissions": {
+        "items": [
+          {
+            "ipProtocol": "tcp",
+            "fromPort": 22,
+            "toPort": 22,
+            "groups": {},
+            "ipRanges": {
+              "items": [
+                {
+                  "cidrIp": "20.0.1.0/24"
+                }
+              ]
+            },
+            "ipv6Ranges": {},
+            "prefixListIds": {}
+          },
+          {
+            "ipProtocol": "tcp",
+            "fromPort": 22,
+            "toPort": 22,
+            "groups": {
+              "items": [
+                {
+                  "groupId": "sg-030864xxxxx"
+                }
+              ]
+            },
+            "ipRanges": {},
+            "ipv6Ranges": {},
+            "prefixListIds": {}
+          },
+          {
+            "ipProtocol": "tcp",
+            "fromPort": 0,
+            "toPort": 65535,
+            "groups": {},
+            "ipRanges": {
+              "items": [
+                {
+                  "cidrIp": "0.0.0.0/0"
+                }
+              ]
+            },
+            "ipv6Ranges": {},
+            "prefixListIds": {}
+          },
+          {
+            "ipProtocol": "tcp",
+            "fromPort": 0,
+            "toPort": 65535,
+            "groups": {},
+            "ipRanges": {
+              "items": [
+                {
+                  "cidrIp": "20.0.0.0/16"
+                }
+              ]
+            },
+            "ipv6Ranges": {},
+            "prefixListIds": {}
+          },
+          {
+            "ipProtocol": "tcp",
+            "fromPort": 389,
+            "toPort": 389,
+            "groups": {},
+            "ipRanges": {
+              "items": [
+                {
+                  "cidrIp": "187.0.0.0/32"
+                }
+              ]
+            },
+            "ipv6Ranges": {},
+            "prefixListIds": {}
+          },
+          {
+            "ipProtocol": "tcp",
+            "fromPort": 389,
+            "toPort": 389,
+            "groups": {},
+            "ipRanges": {
+              "items": [
+                {
+                  "cidrIp": "20.0.0.0/32"
+                }
+              ]
+            },
+            "ipv6Ranges": {},
+            "prefixListIds": {}
+          },
+          {
+            "ipProtocol": "tcp",
+            "fromPort": 389,
+            "toPort": 389,
+            "groups": {
+              "items": [
+                {
+                  "groupId": "sg-0967xxxxxxxx"
+                }
+              ]
+            },
+            "ipRanges": {},
+            "ipv6Ranges": {},
+            "prefixListIds": {}
+          }
+        ]
+      }
+    },
+    "responseElements": {
+      "requestId": "e6c7b351-77f6-447d-9be9-122c3e07b736",
+      "_return": true
+    },
+    "requestID": "e6c7b351-77f6-447d-9be9-122c3e07b736",
+    "eventID": "7f51a264-3905-4f02-9586-ce49e5928aa6",
+    "eventType": "AwsApiCall"
+  }
+}
